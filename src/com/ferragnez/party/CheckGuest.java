@@ -15,17 +15,18 @@ public class CheckGuest {
 			
 			boolean trovato = false;
 		
-		for(String ospiti : invitati)
-		{
+		for(String ospiti : invitati) {
 			if(nomeDaInput.equalsIgnoreCase(ospiti)) {
 				trovato = true;
-				System.out.println("Puoi entrare!"); 
-			}else{
-				System.out.println("Non puoi entrare!");
+				break; 
 			}
-			
+		}	
+			if(trovato) {
+			System.out.println("Sei invitato!");
+			} else {
+				System.out.println("Non sei invitato!");
+			}
 					
-		}
 		
 		
 	}
